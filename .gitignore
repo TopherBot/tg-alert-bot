@@ -1,0 +1,14 @@
+/__pycache__/
+/.venv/
+/.pytest_cache/
+/.coverage
+htmlcov/
+.dist/
+*.egg-info/
+.env
+.env.*
+# Docker artefacts
+Dockerfile
+*.dockerignore
+# uv lockfile (optional to keep in repo)
+uv.lock
