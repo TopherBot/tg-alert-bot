@@ -1,0 +1,6 @@
+# Define scheduled alerts. Crontab syntax is used.
+alerts:
+  - cron: "0 9 * * MON"   # Every Monday at 09:00
+    message: "Good morning team! Remember the weekly sync at 10 AM."
+  - cron: "30 17 * * FRI"
+    message: "🚀 Friday wrap‑up: Submit your timesheets today!"
