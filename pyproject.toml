@@ -1,0 +1,26 @@
+[project]
+name = "tg-alert-bot"
+version = "0.1.0"
+description = "Tiny Telegram bot that sends scheduled alerts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "TopherBot", email = "topherbot@proton.me"}]
+
+[project.dependencies]
+python-telegram-bot = "^21.1"
+APScheduler = "^3.10"
+PyYAML = "^6.0"
+Jinja2 = "^3.1"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
+
+[tool.uv]
+# Keep lockfile for reproducible builds
+locked = true
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "C90", "I", "N", "UP", "YTT", "BLE", "B", "A", "C4", "DTZ", "T10", "EM", "ISC", "ICN", "G", "INP", "PIE", "PYI", "PT", "RET", "SLF", "SIM", "TID", "ARG", "PTH", "RST", "TRY", "RUF"]
